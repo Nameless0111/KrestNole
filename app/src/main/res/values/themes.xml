@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SmenaTem" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">@color/pink</item>
+        <item name="colorPrimaryDark"> @color/green</item>
+        <item name="colorAccent">@color/blue</item>
+    </style>
+    <style name="ImageBtn" parent="Theme.AppCompat.DayNight">
+        <item name="tint">@color/black</item>
+    </style>
+</resources>
