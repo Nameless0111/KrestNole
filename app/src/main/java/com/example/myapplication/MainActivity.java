@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, winner + " победил!", Toast.LENGTH_SHORT).show();
                     updateStatistics(winner);
                     resetGame();
-                    playerXTurn = true;
+                    playerXTurn = false;
                     if(winner == "X" && playingWithBot){playerXTurn = false;}
 
                 } else if (isBoardFull()) {
@@ -136,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
                     updateStatistics("");
                     resetGame();
                     playerXTurn = false;
+                    if(playingWithBot){playerXTurn = false;}
                 }
 
                 playerXTurn = !playerXTurn;
